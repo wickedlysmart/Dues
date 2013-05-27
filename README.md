@@ -1,7 +1,7 @@
 Dues
 ====
 
-![alt tag](https://github.com/wickedlysmart/Dues/raw/master/Dues/screenshot01.png)
+![alt tag](https://raw.github.com/wickedlysmart/Dues/master/Dues/screenshot01.png)
 
 
 점심주문어플(웹서비스연동,Rails,RESTful,CRUD구현)
