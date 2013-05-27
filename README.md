@@ -32,7 +32,7 @@ DATA 설계
 -> xcode ARC 사용시 효율적인  NSRails Framework 사용 (  json , xml parser 및 async )
 ->Foundation 프래임워크에 url loading system을 사용할수 있으나 많은 delegate 작성으로 인해 
      그 보다는 ^() block coding 적용으로 효율적인 NSRails Framework사용.  (참고 : http://dingbat.github.io/nsrails/) 
-
+-> CRUD 기능 구현. 
 
 
 ![alt tag](https://raw.github.com/wickedlysmart/Dues/master/Dues/screenshot01.png)
