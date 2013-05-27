@@ -35,9 +35,21 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
 
+   //sync
+   //self.objects = [NSMutableArray arrayWithArray:[Due remoteAll:nil]];
+   //async
+    [Due remoteAllAsync:^(NSArray *allRemote, NSError *error) {
+        if (error) {
+            NSLog(@"remoteAllAsync error %@",[error localizedDescription]);
+            abort();
+        }
+        
+        self.objects = (NSMutableArray*) allRemote;
+        [self.tableView reloadData];
+        
+    }];
     
-    self.objects = [NSMutableArray arrayWithArray:[Due remoteAll:nil]];
-    [self.tableView reloadData];
+    NSLog(@"after you");
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,5 +14,6 @@
 
 @property (strong,nonatomic) NSMutableArray *objects;
 @property (strong, nonatomic) Due *selectedDue;
+
 - (void)addDue:(Due *)object;
 @end
