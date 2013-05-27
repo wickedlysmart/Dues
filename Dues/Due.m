@@ -9,5 +9,5 @@
 #import "Due.h"
 
 @implementation Due
-
+NSRailsSync(*);
 @end

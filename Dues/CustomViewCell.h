@@ -10,4 +10,7 @@
 
 @interface CustomViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *menu;
+@property (weak, nonatomic) IBOutlet UILabel *amount;
 @end

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A761F30F174C735900D3BD83 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F301174C735900D3BD83 /* NSData+Base64.m */; };
+		A761F310174C735900D3BD83 /* NSMutableArray+NSRails.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F303174C735900D3BD83 /* NSMutableArray+NSRails.m */; };
+		A761F311174C735900D3BD83 /* NSString+Inflection.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F305174C735900D3BD83 /* NSString+Inflection.m */; };
+		A761F312174C735900D3BD83 /* NSRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F308174C735900D3BD83 /* NSRConfig.m */; };
+		A761F313174C735900D3BD83 /* NSRRemoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F30A174C735900D3BD83 /* NSRRemoteManagedObject.m */; };
+		A761F314174C735900D3BD83 /* NSRRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F30C174C735900D3BD83 /* NSRRemoteObject.m */; };
+		A761F315174C735900D3BD83 /* NSRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A761F30E174C735900D3BD83 /* NSRRequest.m */; };
+		A761F31A174C77A500D3BD83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A761F319174C77A400D3BD83 /* CoreData.framework */; };
 		A7CD1462174B2317006D893A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CD1461174B2317006D893A /* UIKit.framework */; };
 		A7CD1464174B2317006D893A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CD1463174B2317006D893A /* Foundation.framework */; };
 		A7CD1466174B2317006D893A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CD1465174B2317006D893A /* CoreGraphics.framework */; };
@@ -18,10 +26,28 @@
 		A7CD1478174B2317006D893A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CD1477174B2317006D893A /* Default-568h@2x.png */; };
 		A7CD147B174B2317006D893A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CD1479174B2317006D893A /* MainStoryboard.storyboard */; };
 		A7CD147E174B2317006D893A /* DuesMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD147D174B2317006D893A /* DuesMasterViewController.m */; };
-		A7CD1481174B2317006D893A /* DuesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD1480174B2317006D893A /* DuesDetailViewController.m */; };
+		A7CD1489174B72BE006D893A /* Due.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD1488174B72BE006D893A /* Due.m */; };
+		A7CD148C174B7B34006D893A /* CustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD148B174B7B34006D893A /* CustomViewCell.m */; };
+		A7CD148F174B85D8006D893A /* DuesAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD148E174B85D8006D893A /* DuesAddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A761F300174C735900D3BD83 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		A761F301174C735900D3BD83 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		A761F302174C735900D3BD83 /* NSMutableArray+NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NSRails.h"; sourceTree = "<group>"; };
+		A761F303174C735900D3BD83 /* NSMutableArray+NSRails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NSRails.m"; sourceTree = "<group>"; };
+		A761F304174C735900D3BD83 /* NSString+Inflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflection.h"; sourceTree = "<group>"; };
+		A761F305174C735900D3BD83 /* NSString+Inflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Inflection.m"; sourceTree = "<group>"; };
+		A761F306174C735900D3BD83 /* NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRails.h; sourceTree = "<group>"; };
+		A761F307174C735900D3BD83 /* NSRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRConfig.h; sourceTree = "<group>"; };
+		A761F308174C735900D3BD83 /* NSRConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRConfig.m; sourceTree = "<group>"; };
+		A761F309174C735900D3BD83 /* NSRRemoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteManagedObject.h; sourceTree = "<group>"; };
+		A761F30A174C735900D3BD83 /* NSRRemoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteManagedObject.m; sourceTree = "<group>"; };
+		A761F30B174C735900D3BD83 /* NSRRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteObject.h; sourceTree = "<group>"; };
+		A761F30C174C735900D3BD83 /* NSRRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteObject.m; sourceTree = "<group>"; };
+		A761F30D174C735900D3BD83 /* NSRRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRequest.h; sourceTree = "<group>"; };
+		A761F30E174C735900D3BD83 /* NSRRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRequest.m; sourceTree = "<group>"; };
+		A761F319174C77A400D3BD83 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A7CD145E174B2317006D893A /* Dues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CD1461174B2317006D893A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A7CD1463174B2317006D893A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,8 +64,12 @@
 		A7CD147A174B2317006D893A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A7CD147C174B2317006D893A /* DuesMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuesMasterViewController.h; sourceTree = "<group>"; };
 		A7CD147D174B2317006D893A /* DuesMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuesMasterViewController.m; sourceTree = "<group>"; };
-		A7CD147F174B2317006D893A /* DuesDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuesDetailViewController.h; sourceTree = "<group>"; };
-		A7CD1480174B2317006D893A /* DuesDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuesDetailViewController.m; sourceTree = "<group>"; };
+		A7CD1487174B72BE006D893A /* Due.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Due.h; sourceTree = "<group>"; };
+		A7CD1488174B72BE006D893A /* Due.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Due.m; sourceTree = "<group>"; };
+		A7CD148A174B7B33006D893A /* CustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewCell.h; sourceTree = "<group>"; };
+		A7CD148B174B7B34006D893A /* CustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewCell.m; sourceTree = "<group>"; };
+		A7CD148D174B85D8006D893A /* DuesAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuesAddViewController.h; sourceTree = "<group>"; };
+		A7CD148E174B85D8006D893A /* DuesAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuesAddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A761F31A174C77A500D3BD83 /* CoreData.framework in Frameworks */,
 				A7CD1462174B2317006D893A /* UIKit.framework in Frameworks */,
 				A7CD1464174B2317006D893A /* Foundation.framework in Frameworks */,
 				A7CD1466174B2317006D893A /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A761F2FE174C735900D3BD83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A761F2FF174C735900D3BD83 /* Categories */,
+				A761F306174C735900D3BD83 /* NSRails.h */,
+				A761F307174C735900D3BD83 /* NSRConfig.h */,
+				A761F308174C735900D3BD83 /* NSRConfig.m */,
+				A761F309174C735900D3BD83 /* NSRRemoteManagedObject.h */,
+				A761F30A174C735900D3BD83 /* NSRRemoteManagedObject.m */,
+				A761F30B174C735900D3BD83 /* NSRRemoteObject.h */,
+				A761F30C174C735900D3BD83 /* NSRRemoteObject.m */,
+				A761F30D174C735900D3BD83 /* NSRRequest.h */,
+				A761F30E174C735900D3BD83 /* NSRRequest.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A761F2FF174C735900D3BD83 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A761F300174C735900D3BD83 /* NSData+Base64.h */,
+				A761F301174C735900D3BD83 /* NSData+Base64.m */,
+				A761F302174C735900D3BD83 /* NSMutableArray+NSRails.h */,
+				A761F303174C735900D3BD83 /* NSMutableArray+NSRails.m */,
+				A761F304174C735900D3BD83 /* NSString+Inflection.h */,
+				A761F305174C735900D3BD83 /* NSString+Inflection.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		A7CD1455174B2317006D893A = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +137,7 @@
 		A7CD1460174B2317006D893A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A761F319174C77A400D3BD83 /* CoreData.framework */,
 				A7CD1461174B2317006D893A /* UIKit.framework */,
 				A7CD1463174B2317006D893A /* Foundation.framework */,
 				A7CD1465174B2317006D893A /* CoreGraphics.framework */,
@@ -86,13 +148,18 @@
 		A7CD1467174B2317006D893A /* Dues */ = {
 			isa = PBXGroup;
 			children = (
+				A761F2FE174C735900D3BD83 /* Source */,
 				A7CD1470174B2317006D893A /* DuesAppDelegate.h */,
 				A7CD1471174B2317006D893A /* DuesAppDelegate.m */,
 				A7CD1479174B2317006D893A /* MainStoryboard.storyboard */,
 				A7CD147C174B2317006D893A /* DuesMasterViewController.h */,
 				A7CD147D174B2317006D893A /* DuesMasterViewController.m */,
-				A7CD147F174B2317006D893A /* DuesDetailViewController.h */,
-				A7CD1480174B2317006D893A /* DuesDetailViewController.m */,
+				A7CD148D174B85D8006D893A /* DuesAddViewController.h */,
+				A7CD148E174B85D8006D893A /* DuesAddViewController.m */,
+				A7CD1487174B72BE006D893A /* Due.h */,
+				A7CD1488174B72BE006D893A /* Due.m */,
+				A7CD148A174B7B33006D893A /* CustomViewCell.h */,
+				A7CD148B174B7B34006D893A /* CustomViewCell.m */,
 				A7CD1468174B2317006D893A /* Supporting Files */,
 			);
 			path = Dues;
@@ -182,7 +249,16 @@
 				A7CD146E174B2317006D893A /* main.m in Sources */,
 				A7CD1472174B2317006D893A /* DuesAppDelegate.m in Sources */,
 				A7CD147E174B2317006D893A /* DuesMasterViewController.m in Sources */,
-				A7CD1481174B2317006D893A /* DuesDetailViewController.m in Sources */,
+				A7CD1489174B72BE006D893A /* Due.m in Sources */,
+				A7CD148C174B7B34006D893A /* CustomViewCell.m in Sources */,
+				A7CD148F174B85D8006D893A /* DuesAddViewController.m in Sources */,
+				A761F30F174C735900D3BD83 /* NSData+Base64.m in Sources */,
+				A761F310174C735900D3BD83 /* NSMutableArray+NSRails.m in Sources */,
+				A761F311174C735900D3BD83 /* NSString+Inflection.m in Sources */,
+				A761F312174C735900D3BD83 /* NSRConfig.m in Sources */,
+				A761F313174C735900D3BD83 /* NSRRemoteManagedObject.m in Sources */,
+				A761F314174C735900D3BD83 /* NSRRemoteObject.m in Sources */,
+				A761F315174C735900D3BD83 /* NSRRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +381,7 @@
 				A7CD1486174B2317006D893A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,7 +6,10 @@
 //  Copyright (c) 2013년 SungJae Lee. All rights reserved.
 //
 
+#import "DuesMasterViewController.h"
 #import "DuesAddViewController.h"
+#import "Due.h"
+#import "DuesAppDelegate.h"
 
 @interface DuesAddViewController ()
 
@@ -32,6 +35,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   
+    if (self.due == nil) {
+        self.due = [[Due alloc]init];
+    }
+    
+    if (self.update) {
+    self.name.text = self.due.name;
+    self.amount.text = [NSString stringWithFormat:@"%@", self.due.amount];
+    self.menu.text = self.due.menu;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +54,7 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
@@ -65,7 +78,7 @@
     
     return cell;
 }
-
+*/
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,4 +131,30 @@
      */
 }
 
+- (IBAction)save:(id)sender {
+    if (self.due == nil) {
+        self.due = [[Due alloc]init];
+        [self.parentObjects addObject:self.due];
+    }
+    
+    self.due.name = self.name.text;
+
+    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+
+    self.due.amount = (NSDecimalNumber*)[formatter numberFromString:self.amount.text];
+    self.due.menu = self.menu.text;
+
+    DuesMasterViewController *mvc = [self.navigationController.viewControllers objectAtIndex:0];
+                                     
+    if (!self.update) {
+        [mvc addDue:self.due ];
+        [self.due remoteCreate:nil];
+    }
+    mvc.selectedDue = self.due;
+    [self.due remoteUpdate:nil];
+    self.update = false;
+    
+    [mvc.tableView reloadData];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

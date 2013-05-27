@@ -7,12 +7,15 @@
 //
 
 #import "DuesAppDelegate.h"
+#import "NSRConfig.h"
 
 @implementation DuesAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[NSRConfig defaultConfig] setAppURL:@"http://coffeetoast.dyndns.org:3000"];
+    
     return YES;
 }
 							

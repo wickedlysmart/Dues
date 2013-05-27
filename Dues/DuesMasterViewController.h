@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Due;
+
 @interface DuesMasterViewController : UITableViewController
 
+@property (strong,nonatomic) NSMutableArray *objects;
+@property (strong, nonatomic) Due *selectedDue;
+- (void)addDue:(Due *)object;
 @end

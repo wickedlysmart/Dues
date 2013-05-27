@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSRails.h"
 
-@interface Due : NSObject
-
+@interface Due : NSRRemoteObject
+@property (strong,nonatomic) NSString *name;
+@property (strong,nonatomic) NSDecimalNumber *amount;
+@property (strong,nonatomic) NSString *menu;
 @end
